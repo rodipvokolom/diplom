@@ -1,0 +1,190 @@
+﻿
+*{
+    cursor:crosshair !important;
+}
+*::selection{
+    background-color: darkred;
+    color: white;
+    cursor: pointer;
+}
+
+.alt__inner-section{
+    
+    width: calc(100vw/1.3);
+    min-height: 100vh;
+    margin: auto auto;
+    background-color: rgb(5, 5, 5);
+}
+.alt__inner__sect__header{
+    display: none;
+    position: sticky;
+    top: 0;
+    height: 90px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    box-shadow:0px 3px 4px black;
+}
+.main__wrapper{
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+}
+.alt__chat__wrapper{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: column wrap;
+    align-items: flex-start;
+}
+.alt__chat__body > *{
+    font-size: 16pt;
+}
+.alt__chat__body {
+    width: 100%;
+    height: fit-content;
+}
+.alt__text__input__field{
+    width: 100%;
+    height: 40px;
+    background-color: rgba(186, 186, 186, 0.306);
+}
+
+
+.alt__chat__message__body{
+    width: 100%;
+    margin: 10px 0 0 0;
+    height: fit-content;
+}
+
+.alt__chat__username{
+    min-width: fit-content;
+}
+
+.alt__chat__username p{
+    color: gainsboro;
+}
+
+.alt__message__text{
+}
+.alt__message__text p{
+    word-break:break-all;
+    word-wrap:normal;
+}
+
+.message__wrapper{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+}
+
+.alt__input__wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+.alt__input__wrapper form p{
+    color: whitesmoke;
+    font-size: 18pt;
+}
+.alt__input__wrapper form{
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.alt__input__wrapper form input[type=text]{
+    caret-color: white;
+    background-color: transparent;
+    height: 100%;
+    flex-grow: 1;
+    font-size: 18pt;
+    border: none;
+    color: whitesmoke;
+    text-indent: 3px;
+
+}
+.alt__input__wrapper form input[type=text]:focus{
+    outline: none;
+}
+#input__error::placeholder{
+    color: rgba(255, 17, 17, 0.466);
+}
+.alt__input__wrapper form p{
+}
+
+.alt__input__wrapper form input[type=text]::placeholder{
+    margin: 5px 5px;
+}
+.alt__input__wrapper form input[type=submit]{
+    display: none;
+}
+
+.alt__chat__message__body{
+    color: white;
+}
+
+.role__name__observer{
+    color:mediumspringgreen;
+} .role__name__observer:hover{text-decoration: underline mediumspringgreen;}
+
+.role__name__overlord{
+    color: crimson;
+}.role__name__overlord:hover{text-decoration: underline crimson;}
+
+.role__name__arbiter{
+    color:turquoise;
+}.role__name__arbiter:hover{text-decoration: underline turquoise;}
+
+.role__name__overseer{
+    color: goldenrod;
+}.role__name__overseer:hover{text-decoration: underline goldenrod;}
+
+.role__name__system{
+    color:khaki;
+}
+.role__name__undefined{
+    color: rgb(181, 181, 181);
+}.role__name__undefined:hover{text-decoration: underline whitesmoke;}
+
+@-webkit-keyframes flashe{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@-webkit-keyframes flash{
+    from{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.anim{
+    -webkit-animation: 1s infinite steps(1, end) 0s flash;
+    font-size: 22pt;
+}
+
+.alt__input__wrapper form input[type=text]:focus + p #a{
+    -webkit-animation: 0s infinite steps(1, end) 0s flashe;
+}
+#active__user__target{
+    
+}
+
+
+

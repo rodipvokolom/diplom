@@ -1,0 +1,93 @@
+
+.main__ach__section{
+    margin: 50px 0 0 0;
+    width: 100%;
+    min-height: 200px;
+    height: fit-content;
+}
+
+.ach__section__wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.form__container form{
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    text-align: center;
+    height: 190px;
+}
+.page_info{width: 90%; margin: 40px auto 0 auto;}
+.page_info p{font-size: 14pt !important; }
+.page_info h1{font-size: 30pt !important; text-decoration:underline;}
+.form__container form input[type=submit]:hover{
+    cursor: pointer;
+    background-color: rgb(165, 6, 6);
+    color: rgb(255, 255, 255);
+}
+
+.form__container form input[type=submit]:active{
+    background-color: rgb(213, 213, 213);
+}
+.form__container form input[type=text]{
+    border: none;
+    border-radius: 0;
+    border-bottom: 3px solid #84817a;
+}
+.form__container form input[type=email]{
+    border: none;
+    border-radius: 0;
+    border-bottom: 3px solid #84817a;
+}
+.form__container form input[type=password]{
+    border: none;
+    border-radius: 0;
+    border-bottom: 3px solid #84817a;
+}
+.form__container form input[type=submit]{
+    background-color: darkred;
+    color: whitesmoke;
+    align-self: center;
+    border-radius: 3px;
+    margin: 15px 0 0 0;
+    width: fit-content;
+    padding: 9px 6px 9px 6px;
+    font-size: 2.1em;
+}
+.form__container form input{
+    width: 390px;
+    padding: 4px 0 0 0;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1.6em;
+    margin: 0 0 0 0;
+}
+.form__container form input::placeholder{
+    transition: 0.6s ease;
+    color: #aaa69d;
+}
+.form__container form input:focus::placeholder{
+    transition: 0.6s ease;
+    color: whitesmoke;
+}
+
+.form__container form input:focus{
+    outline: none;
+    transition: 0.6s ease;
+    border: none;
+    border-radius: 0;
+    border-bottom: 3px solid #84817a;
+    color: whitesmoke;
+}
+.form__container form{margin: 45px 0 0 0;}
+.form__container{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+}

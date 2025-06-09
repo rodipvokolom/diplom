@@ -1,0 +1,349 @@
+
+
+
+
+.tickets__main{
+    width: 95%;
+    min-height: 200px;
+    height: fit-content;
+    margin: 90px auto 60px auto;
+
+}
+
+.tickets__wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+.add__ticket__btn{
+    width: 100%;
+    display: flex;align-items: center;
+    flex-direction: column;
+    margin-top: 15px;
+}
+.add__ticket__btn button{
+    transition: 0.3s ease;
+    align-self: center;
+    font-size: 32pt;
+    padding: 8px 8px 4px 8px;
+    background-color: #9fabad;
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+.add__ticket__btn button:hover{
+    cursor: pointer;
+    background-color: whitesmoke; color: #4eacde;}
+.ticket__popup{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    backdrop-filter: blur(2px);
+    height: 100%;
+    background-color: #0000007a;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: top 0.3s ease;
+    z-index: 1000;
+}
+.ticket__popup__inner{
+    width: 50%;
+    min-height: 50%;
+    height: fit-content;
+    background-color: whitesmoke;
+    border-radius: 4px;
+
+}
+#ticket__popup__close:hover{color: black; cursor: pointer;}
+#ticket__popup__close{
+    width: fit-content;
+    padding: 5px;
+    font-size: 24pt;
+    font-weight: bold;
+    color: crimson;
+}
+
+.add__ticket__form{
+    width: 100%;
+    height: 100%;
+}
+.add__ticket__form form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.add__ticket__form form input[type=text]{font-size:1.5em; border-radius: 4px; width:85%;text-align: center;}
+.add__ticket__form form input{margin: 4px 0 8px 0;}
+.add__ticket__form form textarea{font-size: 18pt; resize: none; border-radius: 3px; padding: 3px; width: 80%;}
+.add__ticket__form form input[type=submit]{
+    font-size: 26pt; 
+    padding: 4px;
+    background-color: #9fabad; color: whitesmoke;
+    border: 3px solid #9fabad;
+    border-radius: 4px;
+    transition: 0.3s ease;
+}
+
+.add__ticket__form form input[type=submit]:hover{
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: black;
+}
+
+
+.tickets__show{
+    width: 90%;
+    margin: 24px auto 0 auto;
+    min-height: 200px;
+    height: fit-content;
+    /* background-color: chartreuse; */
+}
+.tickets__show__wrapper{
+    width: 90%;
+    margin: 24px auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ticket__body{
+    margin: 0 40px 20px 20px;
+    width: 330px;
+    height: fit-content;
+}
+.ticket__body__wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;    
+    border-left: 6px solid #9fabad;
+}
+
+.ticket__username{padding: 4px 0 4px 0; width: 100%; height: fit-content;  background-color: #9fabad; margin-bottom: 19px;border-top-right-radius: 10px;}
+.ticket__username p{color: whitesmoke;}
+.ticket__username a{transition: 0.3s ease;font-size: 1.8em !important; text-decoration: none;}
+.ticket__username a:hover{font-size: 1.85em;} 
+
+.ticket__title{padding: 0 4px 0 16px; width: 100%; height: fit-content;}
+.ticket__title p{font-size: 24pt; line-height: 16pt; color: black;}
+
+.ticket__spec{padding: 0 4px 0 16px;width: 100%; height: fit-content; margin: 12px 0 12px 0;}
+.ticket__spec p{font-size: 20pt; color: black; text-align: justify;}
+
+.ticket__text{padding: 0 4px 0 16px;width: 100%; height: fit-content;}
+.ticket__text p{ color: black;
+    font-size: 1.1em;
+    line-break: normal;
+    text-align: justify;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 16pt;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+
+}
+
+.ticket__misc{width: 100%; height: fit-content; display: flex; flex-direction: row;}
+.ticket__misc form{margin: 8px 0 4px 8px;}
+
+#ticket__more{
+    font-size: 1.7em;
+    background-color: #9fabad;
+    color: whitesmoke;
+    padding: 2px;
+    border: none;
+    border-radius: 4px;
+    padding-top: 6px;
+    transition: 0.3s ease;
+}
+
+#ticket__more:hover{
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: #4eacde;
+}
+.user__tickets{
+    margin: 60px 0 0 0;
+}
+
+.ticket__title__w{
+    background-color: #9fabad;
+    font-weight: 100;
+    padding: 3px 3px 3px 9px;
+    margin-bottom: 14px;
+    color: whitesmoke;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+/* ticket view */
+/* ticket view */
+/* ticket view */
+/* ticket view */
+
+
+.ticket__view__main{
+
+    width: 60%;
+    height: fit-content;
+    margin: 160px auto 240px auto;
+}
+
+.ticket__view__wrapper{
+
+    width: 100%;
+    height: fit-content;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+}
+#back__view{color: #31a7e7; font-size: 26pt; transition: 0.3s ease; text-decoration: none;}
+#back__view:hover{color: black;}
+.ticket__view__body{
+    border-radius: 5px;
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+    width: 100%; 
+    padding-top: 12px;
+    padding-right: 12px;
+    height: fit-content; min-height: 120px; 
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.ticket__view__user a{    
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-decoration: none;
+}
+.ticket__view__user a .ticket__view__username{color:#31a7e7;transition: 0.3s ease;}
+.ticket__view__user a:hover .ticket__view__username{color:black;}
+.ticket__view__user a .ticket__view__pfp img{transition: 0.3s ease;}
+.ticket__view__user a:hover .ticket__view__pfp img{opacity: 70%;}
+.ticket__view__user{
+    width: 100%;
+    height: 100px;
+}
+
+.ticket__view__pfp img{width: 100%; height: 100%; border-radius: 50%;}
+.ticket__view__pfp{
+    margin: 0 0 0 12px;
+    width: 100px;
+    height: 100px;
+}
+.ticket__view__username{
+    margin: 0 0 0 12px;
+    font-size: 32pt;
+    height: fit-content;
+    align-self: center;
+    color: black;
+}
+
+
+.ticket__view__info{
+    padding: 12px;
+    width: 100%;
+    height: fit-content;
+}
+
+
+.view__title{
+    width: 100%;
+}
+.view__title p{font-size: 26pt;}
+
+.view__specs{
+    width: 100%;
+}
+.view__specs p{font-size: 22pt;}
+
+.view__text{
+    width: 100%;
+}
+.view__text p{font-size: 18pt; line-height: 13pt;}
+
+
+
+
+/* view comment section */
+/* view comment section */
+/* view comment section */
+/* view comment section */
+.spacer123a{width:100%; height: 50px; }
+
+
+
+.ticket__comment__wrapper{
+    padding: 6px 0 0 0;
+    margin: 24px auto 12px auto;
+    width: 100%;
+    height: fit-content;
+    border-radius: 8px; border-top: 6px solid black;
+    /* background-color: red;       */
+}
+
+.ticket__comm__form{
+    width: 100%;
+    height: fit-content;
+}
+.ticket__comm__form form{display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between;}
+.ticket__comm__form form textarea{
+    padding: 4px;
+    width: 75%;
+    border-radius: 5px;
+    border: 2px solid rgb(67, 67, 67);
+resize: none;
+font-size: 18pt;
+}
+.ticket__comm__form form input[type=submit]{
+    transition: 0.3s ease;
+    width: 21%;
+    border-radius: 5px;
+    font-size: 2.1em;
+    background-color: #9fabad;
+    color: whitesmoke;
+    border:none;
+}
+.ticket__comm__form form input[type=submit]:hover{
+    cursor: pointer;
+    color: #4eacde;
+    background-color: whitesmoke;
+}
+
+.ticket__comm__sect{
+    margin: 24pt 0 0 0;
+    width: 100%;
+    height: fit-content;
+}
+
+.ticket__comm__body{
+    height: fit-content;
+    margin: 0 auto 15px auto;
+    padding: 4px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.ticket__comm__user{width: 96%; margin: 0 auto 0 auto;}
+.ticket__comm__user a{font-size: 22pt !important; color: #4eacde;}
+.ticket__comm__user a:hover{color: black;}
+.ticket__comm__text{width: 96%; margin: 0 auto 0 auto; padding: 0 4px 8px 24px;}
+.ticket__comm__text p{
+    font-size: 16pt;
+}
